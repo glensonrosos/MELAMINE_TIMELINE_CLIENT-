@@ -6,8 +6,7 @@ import {
 } from '@mui/material';
 // import MenuIcon from '@mui/icons-material/Menu'; // Example for a potential sidebar toggle - removed as unused
 import AccountCircle from '@mui/icons-material/AccountCircle';
-
-import backgroundImage from '../public/sun-tornado.svg';
+import backgroundImage from '../public/low-poly-grid-haikei.svg';
 
 const MainLayout = () => {
   const { user, logout } = useAuth();
@@ -35,11 +34,11 @@ const MainLayout = () => {
 
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh',
-        width: '100%',
-        height: '100%',
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'cover',
-     }}>
+      width: '100%',
+      height: '100%',
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: 'cover',
+   }}>
       <AppBar position="static">
         <Toolbar>
           {/* <IconButton
@@ -52,7 +51,7 @@ const MainLayout = () => {
             <MenuIcon />
           </IconButton> */}
           <Typography variant="h6" component={RouterLink} to="/dashboard" sx={{ flexGrow: 1, color: 'inherit', textDecoration: 'none' }}>
-            MELAMINE Timeline
+            Melamine Timeline
           </Typography>
           {user && (
             <div style={{ display: 'flex', alignItems: 'center' }}>
